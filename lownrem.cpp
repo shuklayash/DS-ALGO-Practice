@@ -21,37 +21,6 @@ typedef pair< int ,int > pii;
     freopen("input.txt", "r", stdin); \
     freopen("output.txt", "w", stdout);
 #define FIO ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
- 
-
-//  //// /fns/// 
-// if (n == 0) 
-//     { 
-//         res.append(str); 
-//         return; 
-//     } 
-  
-//     int len = str.length(); 
-  
-//     // If there are more characters to remove than string 
-//     // length, then append nothing to result 
-//     if (len <= n) 
-//         return; 
-  
-//     // Find the smallest character among first (n+1) characters 
-//     // of str. 
-//     int minIndex = 0; 
-//     for (int i = 1; i<=n ; i++) 
-//         if (str[i] < str[minIndex]) 
-//             minIndex = i; 
-  
-//     // Append the smallest character to result 
-//     res.push_back(str[minIndex]); 
-  
-//     // substring starting from minIndex+1 to str.length() - 1. 
-//     string new_str = str.substr(minIndex+1, len-minIndex); 
-  
-//     // Recur for the above substring and n equals to n-minIndex 
-//     buildLowestNumberRec(new_str, n-minIndex, res); 
 
 void recur(string num ,int n,string &res)
 {
